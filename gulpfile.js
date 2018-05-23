@@ -11,12 +11,21 @@ gulp.task('service-worker', () => {
   return workboxBuild.generateSW({
     globDirectory: 'public',
     globPatterns: [
-      '**\/*.{html,json,js,css}',
+      '**\/*.{html,json,js,css,jpg,png,jpeg,svg,gif,mp4,ico,woff,tff}',
     ],
     swDest: 'build/sw.js',
   });
 });
 
+gulp.task('service-worker-mp4', () => {
+  return workboxBuild.generateSW({
+    globDirectory: 'public',
+    globPatterns: [
+      'sites/default/files/*.mp4',
+    ],
+    swDest: 'build/sw.js',
+  });
+});
 
 gulp.task('scripts', function() {
     gulp.src('js/*.js').pipe(uglify()).pipe(gulp.dest('minjs'));
