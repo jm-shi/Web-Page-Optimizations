@@ -1,10 +1,6 @@
-﻿@charset "UTF-8";
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
- html {
+﻿/*@charset "UTF-8";*/
+
+html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1345,7 +1341,7 @@ html {
 }
 
 body {
-    font-family: "BrixSansRegular",Helvetica,Arial,sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 16px;
     line-height: 1.44;
     color: #484949;
@@ -1441,8 +1437,8 @@ hr {
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-    font-family: "BrixSansBold",Helvetica,Arial,sans-serif;
-    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500 bold;
     line-height: 0.917;
     color: inherit
 }
@@ -6438,7 +6434,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "BrixSansRegular",Helvetica,Arial,sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
@@ -6572,7 +6568,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "BrixSansRegular",Helvetica,Arial,sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
@@ -7284,7 +7280,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     text-transform: uppercase;
-    font-weight: normal
+    font-weight: bold
 }
 
 h1 br,h2 br {
@@ -7292,7 +7288,8 @@ h1 br,h2 br {
 }
 
 b,strong {
-    font-family: 'BrixSansBold'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500
 }
 
 @-moz-document url-prefix() {
@@ -7554,7 +7551,7 @@ input[type="text"] {
 }
 
 .navbar-default .navbar-nav.small-nav .navbar-btn ul li a {
-    font-family: 'BrixSansRegular'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 .nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
@@ -7598,6 +7595,7 @@ input[type="text"] {
 .navbar-default .navbar-nav .nav-group>a {
     text-transform: uppercase;
     font-size: 0.835em;
+    font-weight: bold;
     color: #484949;
     text-decoration: none;
     text-align: left;
@@ -7660,7 +7658,7 @@ input[type="text"] {
     padding: 0.5em 1em;
     display: block;
     color: #fff;
-    font-family: "BrixSansRegular"
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 .main-nav .list-unstyled li a:hover {
@@ -7704,14 +7702,16 @@ a.anchor {
 
 .text-link,.pop-over {
     text-transform: uppercase;
-    font-family: "BrixSansBold", Helvetica, Arial, sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500;
     border-bottom: 1px #006A96 solid;
     letter-spacing: 0.08em
 }
 
 .text-link-secondary {
     text-transform: uppercase;
-    font-family: "BrixSansBold", Helvetica, Arial, sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500;
     border-bottom: 1px #fff solid;
     letter-spacing: 0.08em
 }
@@ -7772,12 +7772,14 @@ a.anchor {
 .btn-default {
     background-color: #FFCD00;
     color: #484949;
-    font-family: 'BrixSansBold';
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 600;
     transition: all 0.3s
 }
 
 .btn-primary {
-    font-family: 'BrixSansBold'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 600;
 }
 
 .btn-default:hover,.btn-default:active {
@@ -7807,7 +7809,8 @@ section.jumbotron-hero {
 }
 
 .navbar-default {
-    font-family: "BrixSansBold", Helvetica, Arial, sans-serif
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500
 }
 
 .navbar-brand {
@@ -7965,7 +7968,8 @@ section.jumbotron-hero {
 }
 
 .breadcrumb>.active {
-    font-family: 'BrixSansBold'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500
 }
 
 .page-inner {
@@ -7988,7 +7992,7 @@ section.jumbotron-hero {
 
 .alert {
     margin-bottom: 0;
-    font-family: 'BrixSansRegular';
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #fff;
     background: red;
     padding: 1.35em 0;
@@ -8024,7 +8028,12 @@ section.jumbotron-hero {
     right: 15px
 }
 
-.jumbotron-hero-lg {
+.webp .jumbotron-hero-lg {
+    background-image: url("../img/bg_homepage.webp")
+}
+
+.no-js .jumbotron-hero-lg,
+.no-webp .jumbotron-hero-lg {
     background-image: url("../img/bg_homepage.jpg")
 }
 
@@ -8038,7 +8047,25 @@ section.jumbotron-hero {
     right: 0
 }
 
-#video-background {
+.webp #video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-image: url("../img/bg_homepage.webp");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.no-js #video-background,
+.no-webp #video-background {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -8082,7 +8109,8 @@ section.jumbotron-hero {
 
 .event-single .date-wrap p span {
     font-size: 2em;
-    font-family: 'BrixSansBold';
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500;
     line-height: 0.85
 }
 
@@ -8167,17 +8195,20 @@ section.jumbotron-hero {
 
 .quote-slider h4 {
     font-size: 1.8em;
-    font-family: 'BrixSansBold-Italic'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500;
+    font-style: italic
 }
 
 .quote-slider p {
     margin: 0;
-    font-family: 'BrixSansRegular-Italic'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: italic
 }
 
 .quote-slider p.citation {
     text-transform: uppercase;
-    font-family: 'BrixSansRegular';
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 0.8em;
     margin-top: 0.5em
 }
@@ -8243,25 +8274,32 @@ section.jumbotron-hero {
 
 .no-js .jumbotron-callout-sm.jumbotron-research,
 .no-webp .jumbotron-callout-sm.jumbotron-research {
-    background-image: url("../img/bg_research-50w.jpg");
+    background-image: url("../img/bg_research.jpg");
 }
-
+/*
 .no-js .jumbotron-callout-sm.jumbotron-research.visible,
 .no-webp .jumbotron-callout-sm.jumbotron-research.visible {
     background-image: url("../img/bg_research.jpg");
-}
+}*/
 
 /*
 .jumbotron-callout-sm.jumbotron-research {
     background-image: url("../img/bg_research.jpg")
 }
 */
-.jumbotron.jumbotron-attend {
-    background-image: url("../img/bg_attend-50w.jpg");
+
+.webp .jumbotron.jumbotron-attend {
+    background-image: url("../img/bg_attend-50w.webp");
     background-position: center top
 }
 
-.jumbotron.jumbotron-attend.visible {
+.webp .jumbotron.jumbotron-attend.visible {
+    background-image: url("../img/bg_attend.webp");
+    background-position: center top
+}
+
+.no-js .jumbotron.jumbotron-attend,
+.no-webp .jumbotron.jumbotron-attend {
     background-image: url("../img/bg_attend.jpg");
     background-position: center top
 }
@@ -8315,17 +8353,31 @@ section.jumbotron-hero {
     margin-top: 1em
 }
 
-.instagram-feed {
-    background: url("../img/placeholder_ig-50w.jpg") no-repeat;
+.webp .instagram-feed {
+    background: url("../img/placeholder_ig-50w.webp") no-repeat;
     height: 400px;
     background-size: cover
 }
 
-.instagram-feed.visible {
+.webp .instagram-feed.visible {
+    background: url("../img/placeholder_ig.webp") no-repeat;
+    height: 400px;
+    background-size: cover
+}
+
+.no-js .instagram-feed,
+.no-webp .instagram-feed {
     background: url("../img/placeholder_ig.jpg") no-repeat;
     height: 400px;
     background-size: cover
 }
+
+/*
+.instagram-feed.visible {
+    background: url("../img/placeholder_ig.jpg") no-repeat;
+    height: 400px;
+    background-size: cover
+}*/
 
 .jumbotron-white {
     background-image: url("../img/bg_yellow_lines_sm_right.jpg")
@@ -8400,15 +8452,15 @@ section.jumbotron-hero {
 
 .no-js .jumbotron-event-multiple,
 .no-webp .jumbotron-event-multiple {
-    background-image: url("../img/bg_event_multiple-50w.jpg");
+    background-image: url("../img/bg_event_multiple.jpg");
     color: #fff
 }
-
+/*
 .no-js .jumbotron-event-multiple.visible,
 .no-webp .jumbotron-event-multiple.visible {
     background-image: url("../img/bg_event_multiple.jpg");
     color: #fff
-}
+}*/
 /*
 .jumbotron-event-multiple {
     background-image: url("../img/bg_event_multiple.jpg");
@@ -8419,7 +8471,7 @@ section.jumbotron-hero {
     color: #fff;
     text-transform: none;
     border-color: #fff;
-    font-family: 'BrixSansRegular'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 .jumbotron-event-multiple .events-wrap {
@@ -8450,7 +8502,7 @@ section.jumbotron-hero {
 }
 
 .campaign-nontradition h2 span {
-    color: #d6e1f1
+    color: #cc0000 /* originally #d6e1f1 */
 }
 
 .jumbotron-white {
@@ -8580,7 +8632,8 @@ section.jumbotron-hero {
     line-height: 2.5em;
     padding-bottom: 0.35em;
     text-transform: uppercase;
-    font-family: 'BrixSansBold';
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 500;
     margin-bottom: 0
 }
 
@@ -8996,7 +9049,7 @@ span.twitter-typeahead {
 }
 
 #accordion .text-link span {
-    font-family: 'BrixSansRegular';
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-transform: capitalize
 }
 
@@ -9212,14 +9265,15 @@ span.twitter-typeahead {
     background-image: url("../img/bg_map.webp");
 }
 
-.no-js .jumbotron-map, .no-webp .jumbotron-map {
-    background-image: url("../img/bg_map-50w.jpg");
-}
 
+.no-js .jumbotron-map, .no-webp .jumbotron-map {
+    background-image: url("../img/bg_map.jpg");
+}
+/*
 .no-js .jumbotron-map.visible, 
 .no-webp .jumbotron-map.visible {
     background-image: url("../img/bg_map.jpg");
-}
+}*/
 /*
 .jumbotron-map {
     background-image: url("../img/bg_map.jpg")
@@ -9284,13 +9338,13 @@ span.twitter-typeahead {
 
 .no-js .jumbotron-campus-life,
 .no-webp .jumbotron-campus-life {
-    background-image: url("../img/bg_campus_life_hero-50w.jpg");
+    background-image: url("../img/bg_campus_life_hero.jpg");
 }
-
+/*
 .no-js .jumbotron-campus-life.visible,
 .no-webp .jumbotron-campus-life.visible {
     background-image: url("../img/bg_campus_life_hero.jpg");
-}
+}*/
 
 .jumbotron-tab {
     background: url("../img/bg_tab_module.jpg") no-repeat center top
@@ -9525,7 +9579,8 @@ span.twitter-typeahead {
 }
 
 .testimonial-wrap .popover blockquote em {
-    font-family: 'BrixSansRegular-Italic'
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: italic
 }
 
 .testimonial-wrap .popover p {
@@ -9679,8 +9734,9 @@ span.twitter-typeahead {
     white-space: normal
 }
 
+
 .footer-copyright {
-    background: #00C6D7;
+    background: #009999; /* originally #00C6D7; */
     color: #fff;
     padding: 1em;
     margin-bottom: 0
@@ -10738,9 +10794,20 @@ span.twitter-typeahead {
         .public-tours {
     background: url("../../_images/visiting-tours/public-tours.jpg"); background-image: url("../../_images/visiting-tours/public-tours.jpg") !important;
 }
-                                                                                                .vid-poster {
+    
+/*.vid-poster {
+    background: url("../vid/vid-poster.jpg"); background-image: url("../vid/vid-poster.jpg") !important;
+}*/
+
+.webp .vid-poster {
+    background: url("../vid/vid-poster.webp"); background-image: url("../vid/vid-poster.webp") !important;
+}
+
+.no-js .vid-poster,
+.no-webp .vid-poster {
     background: url("../vid/vid-poster.jpg"); background-image: url("../vid/vid-poster.jpg") !important;
 }
+
         .online-extension-hero {
     background: url("../../_images/online-extension/hero.jpg"); background-image: url("../../_images/online-extension/hero.jpg") !important;
 }
