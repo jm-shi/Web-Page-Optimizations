@@ -344,7 +344,7 @@ self.__precacheManifest = [
     "revision": "5869c96cc8f19086aee625d670d741f9"
   },
   {
-    "url": "_resources/css/styles.css",
+    "url": "_resources/css/styles.min.css",
     "revision": "1af8ded6712be1f0e5b35850112bbd6a"
   },
   {
@@ -484,6 +484,14 @@ self.__precacheManifest = [
     "revision": "df156be204232080f307d4e4558c362b"
   },
   {
+    "url": "_resources/img/bg_attend-50w.webp",
+    "revision": "33jfjfjfjaaaausdfbhemarkae"
+  },
+  {
+    "url": "_resources/img/bg_attend.webp",
+    "revision": "38asudfahsdfalslalawbdccs"
+  },
+  {
     "url": "_resources/img/bg_blue_lines.png",
     "revision": "459e2cfea34221bc364b7788e41fc866"
   },
@@ -500,6 +508,14 @@ self.__precacheManifest = [
     "revision": "074210cb0157a6032153db5f4a225407"
   },
   {
+    "url": "_resources/img/bg_campus_life_hero-50w.webp",
+    "revision": "66asdlfiuahsdadevalwefajilbjk"
+  },
+  {
+    "url": "_resources/img/bg_campus_life_hero.webp",
+    "revision": "99eefahsdilfjbalfjhjewbhfasdewa3"
+  },
+  {
     "url": "_resources/img/bg_campus_life-50w.jpg",
     "revision": "d9037934c0b366c98e3a246d5ea0b339"
   },
@@ -514,6 +530,14 @@ self.__precacheManifest = [
   {
     "url": "_resources/img/bg_event_multiple.jpg",
     "revision": "ee417f31d56205e0261a08251ecd3ce4"
+  },
+  {
+    "url": "_resources/img/bg_event_multiple-50w.webp",
+    "revision": "998faisdfjasd3jiwelfasdjbfalsdblw3edsh"
+  },
+  {
+    "url": "_resources/img/bg_event_multiple.webp",
+    "revision": "23r6fasuyfhkdlfaiusdhfasuillrruei"
   },
   {
     "url": "_resources/img/bg_events_cheerleaders.jpg",
@@ -556,6 +580,14 @@ self.__precacheManifest = [
     "revision": "708e313c87774f8c2522fe595b48bb99"
   },
   {
+    "url": "_resources/img/bg_map-50w.webp",
+    "revision": "939af8sfya0hs8fuiaea87ofui3wesu"
+  },
+  {
+    "url": "_resources/img/bg_map.webp",
+    "revision": "32853iufashflsdfuasdhlfjksdafhasdj"
+  },
+  {
     "url": "_resources/img/bg_mission.jpg",
     "revision": "be525114393f87401998b05dad16710c"
   },
@@ -566,6 +598,14 @@ self.__precacheManifest = [
   {
     "url": "_resources/img/bg_research.jpg",
     "revision": "6b2418e4e01c923f4df3f65d088e9895"
+  },
+  {
+    "url": "_resources/img/bg_research-50w.webp",
+    "revision": "9dajskdfhlaskjdfhuhujklhljkhilj"
+  },
+  {
+    "url": "_resources/img/bg_research.webp",
+    "revision": "4easdijofaspdfioasdjfadsapapa"
   },
   {
     "url": "_resources/img/bg_support_campaign.jpg",
@@ -668,6 +708,14 @@ self.__precacheManifest = [
     "revision": "2b0ceb626ac6c6db94f44193a2c4695d"
   },
   {
+    "url": "_resources/img/placeholder_ig-50w.webp",
+    "revision": "4637281asudiflasdhfewuilafewh8f"
+  },
+  {
+    "url": "_resources/img/placeholder_ig.webp",
+    "revision": "8eowfahsfy8aeow8hweoiul3wef666ea"
+  },
+  {
     "url": "_resources/img/tab_fun.jpg",
     "revision": "012cfd36ad5c0f6822d4d74e72f36799"
   },
@@ -762,22 +810,6 @@ self.__precacheManifest = [
   {
     "url": "index.html",
     "revision": "236877fe485f7e4ded871186f8fce0bd"
-  },
-  {
-    "url": "intersect.js",
-    "revision": "85192611a59f06d2391e090cdefa7dee"
-  },
-  {
-    "url": "intersection-observer-test.html",
-    "revision": "add8f010d57dc3daa60d05b2e81f7294"
-  },
-  {
-    "url": "intersection-observer-test.js",
-    "revision": "2d3e620bbe27f23e19f0684f590bc300"
-  },
-  {
-    "url": "intersection-observer.js",
-    "revision": "45a7ef1569c64b6925655283f606b3e0"
   },
   {
     "url": "manifest.json",

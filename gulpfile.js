@@ -13,8 +13,10 @@ var cleanCSS = require('gulp-clean-css');
 var webp = require('gulp-webp');
 var responsive = require('gulp-responsive');
 var cssbeautify = require('gulp-cssbeautify');
- 
 var workboxBuild = require('workbox-build');
+var removeHtmlComments = require('gulp-remove-html-comments');
+var htmlmin = require('gulp-html-minifier');
+
 gulp.task('service-worker', () => {
   return workboxBuild.generateSW({
     globDirectory: 'public',
@@ -35,6 +37,18 @@ gulp.task('service-worker-mp4', () => {
   });
 });
 
+gulp.task('striphtml', function () {
+  return gulp.src('public/index.html')
+    .pipe(removeHtmlComments())
+    .pipe(gulp.dest('index'));
+});
+
+gulp.task('minifyhtml', function() {
+  gulp.src('index/index.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'))
+});
+
 gulp.task('beautifycss', function() {
     return gulp.src('public/_resources/css/styles.css')
         .pipe(cssbeautify())
@@ -44,15 +58,15 @@ gulp.task('beautifycss', function() {
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 gulp.task('minifycss', function () {
-    gulp.src('styles.css')
+    gulp.src('public/_resources/css/styles.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('minifiedcss'));
 });
 
 const stripCssComments = require('gulp-strip-css-comments');
 gulp.task('strip-comments', () =>
-    gulp.src('unpurified_styles.css')
+    gulp.src('public/_resources/css/styles.css')
         .pipe(stripCssComments())
         .pipe(gulp.dest('dist'))
 );
@@ -104,7 +118,7 @@ gulp.task('svg', function () {
 
 // Compress images
 gulp.task('image', function() {
-    gulp.src('public/_resources/img/academics/*')
+    gulp.src('public/_resources/vid/vid-poster.webp')
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
@@ -116,7 +130,7 @@ gulp.task('image', function() {
           ]
       })
     ]))
-    .pipe(gulp.dest('public/_resources/img/academicsg'));
+    .pipe(gulp.dest('asdfj'));
 });
 
 // convert jpg to webp
@@ -166,7 +180,7 @@ return gulp
 });
 */
 gulp.task('purifycss', function() {
-  return gulp.src('public/_resources/css/styles.css')
+  return gulp.src('styles.css')
     .pipe(purify(['public/_resources/js/*.js', 'index.html']))
     .pipe(gulp.dest('purified'));
 });
