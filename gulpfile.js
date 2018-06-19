@@ -1,5 +1,5 @@
-var gulp = require('gulp'); // import gulp node package
-var uglify = require('gulp-uglify'); // get rid of all spaces
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var jpegtran = require('imagemin-jpegtran-gfw');
 var minifyjs = require('gulp-js-minify');
@@ -21,7 +21,7 @@ gulp.task('service-worker-mp4', () => {
   return workboxBuild.generateSW({
     globDirectory: 'public',
     globPatterns: [
-      'sites/default/files/*.mp4',
+      'public/_resources/vid/ucsd-home.mp4',
     ],
     swDest: 'build/sw.js',
   });
@@ -35,7 +35,7 @@ gulp.task('styles', function() {
     console.log('run styles');
 });
 
-// compress svg
+// Compress svg
 gulp.task('svg', function () {
   return gulp.src('public/sites/all/themes/ucd_one/images/*.svg')
       .pipe(svgmin())
@@ -43,16 +43,16 @@ gulp.task('svg', function () {
 });
 
 // Compress images
-/*gulp.task('image', function() {
+gulp.task('image', function() {
     gulp.src('img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('build/img'));
-});*/
+});
 
 gulp.task('progressive', function () {
     return gulp.src('img/*.jpg')
         .pipe(jpegtran({ progressive: true })())
-        .pipe(gulp.dest('img')); // override original images
+        .pipe(gulp.dest('img')); 
 });
 
 gulp.task('minify-js', function(){
@@ -61,7 +61,7 @@ gulp.task('minify-js', function(){
     .pipe(gulp.dest('public/sites/default/files/js'));
 });
 
-// compress images
+// Compress images
 gulp.task('compress', () =>
 	gulp.src('public/sites/all/themes/ucd_one/images/icons/*.svg')
         .pipe(imagemin({

@@ -429,6 +429,10 @@ self.__precacheManifest = [
     "revision": "7ef5a141d5c1c3bf8c3ccf9e3a68250e"
   },
   {
+    "url": "sites/default/files/styles/ucdedu_slideshow/public/image_gallery/20120928_tercero_120.jpg",
+    "revision": "0d26b40556c9cae7ce754290a265238b"
+  },
+  {
     "url": "sites/default/files/styles/ucdedu_slideshow/public/image_gallery/20121005_pajamarino_288.jpg",
     "revision": "fa9fbcdafe525fae1dd47db9ea3bb75f"
   },
@@ -439,6 +443,10 @@ self.__precacheManifest = [
   {
     "url": "sites/default/files/styles/ucdedu_slideshow/public/image_gallery/20130927_buzz_154.jpg",
     "revision": "17236969aa3aef5bf04190fa63233995"
+  },
+  {
+    "url": "sites/default/files/styles/ucdedu_slideshow/public/image_gallery/arc_0.jpg",
+    "revision": "76fb8397404f1c1cec02393a8e799f2d"
   },
   {
     "url": "sites/default/files/styles/ucdedu_slideshow/public/image_gallery/cal-aggie-band-uh-2.jpg",
@@ -483,16 +491,7 @@ self.__precacheManifest = [
   {
     "url": "www.trumba.com/scripts/spuds.js",
     "revision": "3e15822705baed4ab5befdeb9d0a18ed"
-  },
-  {
-    "url": "sites/default/files/onthemap.mp4",
-    "revision": "jasfdp483290wahsdf9da"
-  },
-  {
-    "url": "sites/default/files/who.mp4",
-    "revision": "aaps38r9s0fdsha9ewrfsdaaap"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
