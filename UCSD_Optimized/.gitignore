@@ -1,0 +1,13 @@
+node_modules
+web
+unpurified_styles.css
+temp
+styles.css
+responsive-images
+purified
+myscripts.js
+minified
+dist
+build
+beautify
+beautified
