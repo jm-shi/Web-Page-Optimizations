@@ -1,0 +1,21 @@
+{
+    "name": "ucdavis",
+    "short_name": "ucd",
+    "manifest_version": 2,
+    "start_url": "index.html",
+    "background_color": "#ffffff",
+    "theme_color": "#2571c7",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [{
+        "src": "sites/default/files/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "sites/default/files/logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+}
